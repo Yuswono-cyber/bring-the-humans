@@ -10,14 +10,15 @@ A single-page advertisement for [make.fun](https://make.fun/r/p57g7gfc), the
 bounty board where people team up with AI coding agents to build real software
 for prizes paid in USDC on Solana.
 
-- `index.html` — the ad itself: hero with the referral link, the live bounty
-  cards, a five-step "how it works", and the reasons builders pick make.fun.
+- `index.html` — a responsive editorial ad with a visible referral invitation,
+  three practical submission steps, a referral disclosure and four native FAQ panels.
+  Prize guarantees and stale static bounty prices have been removed.
   Every call to action points at the entrant's own referral link,
   **https://make.fun/r/p57g7gfc** (referral code `p57g7gfc`), and the link and
   code are printed on the page itself.
 - `ad.png` — a 1440×900 render of the page's first viewport, referral link
   visible, produced from this exact `index.html` with headless Chromium.
 
-The page is one self-contained HTML file — inline CSS, inline SVG for the
-ghost mark, no external requests — so it can be hosted anywhere static files
-are served, including GitHub Pages.
+The page is one self-contained HTML file with inline CSS, native HTML interactions,
+keyboard focus states and reduced-motion support. It makes no external asset requests
+and can be hosted anywhere static files are served, including GitHub Pages.
